@@ -2,17 +2,17 @@ pragma solidity ^0.4.10;
 import 'zeppelin-solidity/contracts/token/ERC20/StandardToken.sol';
 import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
 
-contract Escher is StandardToken, Ownable {
+contract Votes is StandardToken, Ownable {
   event Mint(address indexed to, uint256 amount);
   event MintFinished();
   event Burn(address indexed burner, uint256 value);
 
-  string public name = 'Escher';
-  string public symbol = 'ESCH';
+  string public name = 'Votes';
+  string public symbol = 'VOTE';
   uint public decimals = 18;
   bool public mintingFinished = false;
 
-  function Escher() public {
+  function Votes() public {
     // nothing to do here
   }
 
